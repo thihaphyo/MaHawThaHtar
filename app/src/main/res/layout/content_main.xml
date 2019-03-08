@@ -21,7 +21,8 @@
             android:id="@+id/fg_slider"
             android:name="com.padc.mahawthadar.fragments.SliderFragment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            />
 
         <fragment
             android:id="@+id/fg_famous"
@@ -31,24 +32,35 @@
             android:layout_below="@+id/fg_slider"
             android:layout_marginTop="@dimen/margin_medium_2" />
 
-
-        <TextView
-            android:id="@+id/tv_new"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/fg_famous"
-            android:layout_marginLeft="@dimen/margin_medium"
-            android:layout_marginTop="@dimen/margin_medium_2"
-            android:fontFamily="sans-serif-condensed"
-            android:text="အသစ်ထွက်"
-            android:textSize="@dimen/text_regular_2x"
-            android:textStyle="bold" />
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_new"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/tv_new" />
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fg_famous">
+
+            <TextView
+                android:id="@+id/tv_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:fontFamily="sans-serif-condensed"
+                android:text="အသစ်ထွက်"
+                android:textSize="@dimen/text_regular_2x"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/margin_medium"
+                android:paddingRight="@dimen/margin_medium" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_new"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_new" />
+
+
+        </RelativeLayout>
+
+
+
 
     </RelativeLayout>
 
