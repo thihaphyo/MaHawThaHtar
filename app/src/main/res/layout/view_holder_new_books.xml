@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/fl"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:src="@drawable/ic_send_black_24dp"
+        android:tint="#0d6fe1" />
+
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_medium">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="#F0F0F0"
+            android:padding="@dimen/margin_medium">
+
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="@dimen/margin_small"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Harry Potter and cursed child"
+                android:textSize="@dimen/text_regular_2x"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_2"
+                android:layout_alignLeft="@+id/tv_2"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-condensed"
+                android:lineSpacingMultiplier="1.3"
+                android:maxLines="3"
+                android:text="မန် မာ့ တော် ဝင် အ ခမ်း အ နား များ မှ နန်း စဉ် မြ တ ဘက် တော် အ ကြောင်း တ စ့ တ စောင်း
+မြတဘက်တော်များကိုကုန်းဘောင်ခေတ်,နန်းတွင်းမိဖုရားများနှင့်သမီးတော်များ ၊ စော်ဘွားစော်ခံတို့၏ မဟာဒေဝီများဆင်မြန်းခဲ့ကြပါတယ် ၊ ဒါပေမည့်အမြဲတစေ,တော့ဆင်မြန်း ခြင်းမရှိပါ,,သတ်မှတ်ထားတဲ့တော်ဝင်အခမ်းအနားရှိမှာသာလျှင်အဆင့်အတန်းအလိုက်ဝတ်ဆင်ရပါတယ်" />
+
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            app:cardCornerRadius="5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dummy_harry" />
+
+        </android.support.v7.widget.CardView>
+
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl"
+        android:layout_marginLeft="@dimen/margin_medium_3"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="Reader Count ; 48 Sender Count : 48" />
+
+
+</RelativeLayout>
